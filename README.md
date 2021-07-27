@@ -1,6 +1,6 @@
 # Azure Purview - Publish and Subscribe to Kafka Topics via Eventhubs <!-- omit in toc -->
 
-This sample documents and showcases how you can publish and subscribe to [Azure Purview](https://azure.microsoft.com/en-au/services/purview/) events through a Kafka Topic via Eventhubs. It documents the diffrent payload expected formats and corresponding samples including how to log custom lineage via Eventhubs.
+This sample documents and showcases how you can publish and subscribe to [Azure Purview](https://azure.microsoft.com/en-au/services/purview/) events through a Kafka Topic via Eventhubs. It documents the different payload expected formats and corresponding samples including how to log custom lineage via Eventhubs.
 
 This sample is meant to complement the [official Microsoft documentation](https://docs.microsoft.com/en-us/azure/purview/manage-kafka-dotnet).
 
@@ -31,7 +31,7 @@ To publish events to Purview, publish to provided `ATLAS_HOOK` eventhub.
 
 ### Known Issues
 
-This sample uses the [Eventhub REST API](https://docs.microsoft.com/en-us/rest/api/eventhub/) because the [Eventhub SDKs will batch messages into array](https://stackoverflow.com/questions/66321726/does-eventhubproducerclient-offer-sendasync-with-single-eventdata). As of June 2021, Azure Purview does not support reading this batched format.
+This sample uses the [Eventhub REST API](https://docs.microsoft.com/en-us/rest/api/eventhub/) because the [Eventhub SDKs will batch messages into an array with no way to send a single event](https://stackoverflow.com/questions/66321726/does-eventhubproducerclient-offer-sendasync-with-single-eventdata). As of June 2021, Azure Purview does not support reading this batched format.
 
 ### How to use the sample
 
@@ -86,6 +86,7 @@ Sample payloads:
 
 - [eh_create_entity.json](atlas_definitions/eh_create_entity.json)
 - [eh_full_update_entity.json](atlas_definitions/eh_full_update_entity.json)
+- [custom lineage](atlas_definitions/eh_create_entity_lineage.json)
 
 #### ENTITY_PARTIAL_UPDATE_V2
 
