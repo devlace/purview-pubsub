@@ -1,0 +1,23 @@
+{
+    "message": {
+        "entityId": {
+            "typeName": "DataSet",
+            "uniqueAttributes": {
+                "qualifiedName": "MyDataset"
+            }
+        },
+        "entity": {
+            "entity": {
+                "typeName": "DataSet",
+                "attributes": {
+                    "name": "My PARTIALLY UPDATED Dataset"
+                }
+            }
+        },
+        "type": "ENTITY_PARTIAL_UPDATE_V2",
+        "user": "admin"
+    },
+    "version": {
+        "version": "1.0.0"
+    }
+}

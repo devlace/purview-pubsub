@@ -1,0 +1,49 @@
+{
+    "message": {
+        "entities": {
+            "entities": [
+                {
+                    "guid": "-1",
+                    "typeName": "Process",
+                    "attributes": {
+                        "qualifiedName": "MyProcess",
+                        "name": "My Process",
+                        "inputs": [
+                            {
+                                "guid": "-2"
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "guid": "-3"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "referredEntities": {
+                "-2": {
+                    "guid": "-2",
+                    "typeName": "DataSet",
+                    "attributes": {
+                        "qualifiedName": "MyInputDataset",
+                        "name": "My Input Dataset"
+                    }
+                },
+                "-3": {
+                    "guid": "-3",
+                    "typeName": "DataSet",
+                    "attributes": {
+                        "qualifiedName": "MyOutputDataset",
+                        "name": "My Output Dataset"
+                    }
+                }
+            }
+        },
+        "type": "ENTITY_CREATE_V2",
+        "user": "admin"
+    },
+    "version": {
+        "version": "1.0.0"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "message": {
+        "entities": {
+            "entities": [
+                {
+                    "typeName": "DataSet",
+                    "attributes": {
+                        "qualifiedName": "MyDataset",
+                        "name": "My Dataset"
+                    }
+                }
+            ]
+        },
+        "type": "ENTITY_CREATE_V2",
+        "user": "admin"
+    },
+    "version": {
+        "version": "1.0.0"
+    }
+}

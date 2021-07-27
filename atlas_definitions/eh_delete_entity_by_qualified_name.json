@@ -1,0 +1,17 @@
+{
+    "message": {
+        "entities": [
+            {
+                "typeName": "DataSet",
+                "uniqueAttributes": {
+                    "qualifiedName": "MyDataset"
+                }
+            }
+        ],
+        "type": "ENTITY_DELETE_V2",
+        "user": "admin"
+    },
+    "version": {
+        "version": "1.0.0"
+    }
+}
